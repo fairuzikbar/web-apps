@@ -343,7 +343,7 @@ function SplitBill() {
                 {formatCurrency(
                   -(
                     totalPerPerson.length > 1
-                      ? (diskon / totalAll) * total
+                      ? (diskon ? diskon : 0 / totalAll ? totalAll : 0) * total
                       : diskon
                   ).toFixed(0)
                 )}
