@@ -17,7 +17,7 @@ function SplitBill() {
     "Biaya Parkir": 0,
     "Biaya Kemasan": 0,
   });
-  const [pajakPercentage, setPajakPercentage] = useState(0); // Store the percentage of Pajak
+  const [pajakPercentage, setPajakPercentage] = useState(0);
   const [diskon, setDiskon] = useState(0);
 
   const addRow = (e) => {
@@ -40,16 +40,11 @@ function SplitBill() {
     setNewRow({ detail: "", hargaTotal: "", jumlah: "1" });
   };
 
-  // const deleteRow = (rowId) => {
-  //   setRows(rows.filter((row) => row.id !== rowId));
-  // };
-
   const deleteRow = (rowId) => {
     const updatedRows = rows.filter((row) => row.id !== rowId);
-    // Atur ulang indeks
     const reindexedRows = updatedRows.map((row, index) => ({
       ...row,
-      id: index + 1, // Mulai dari 1
+      id: index + 1,
     }));
     setRows(reindexedRows);
   };
@@ -64,13 +59,12 @@ function SplitBill() {
 
   const deletePerson = (index) => {
     const updatedPeople = [...people];
-    updatedPeople.splice(index, 1); // Hapus orang berdasarkan indeks
+    updatedPeople.splice(index, 1);
     setPeople(updatedPeople);
 
-    // Update selectedPeople di setiap row
     const updatedRows = rows.map((row) => {
       const updatedSelectedPeople = [...row.selectedPeople];
-      updatedSelectedPeople.splice(index, 1); // Hapus juga dari selectedPeople
+      updatedSelectedPeople.splice(index, 1);
       return { ...row, selectedPeople: updatedSelectedPeople };
     });
     setRows(updatedRows);
@@ -81,11 +75,11 @@ function SplitBill() {
   };
 
   const handlePajakChange = (e) => {
-    setPajakPercentage(parseFloat(e.target.value) || 0); // Set Pajak Percentage
+    setPajakPercentage(parseFloat(e.target.value) || 0);
   };
 
   const handleDiskonChange = (e) => {
-    setDiskon(parseFloat(e.target.value) || 0); // Set Pajak Percentage
+    setDiskon(parseFloat(e.target.value) || 0);
   };
 
   const handleCheckboxChange = (rowIndex, personIndex) => {
@@ -117,9 +111,7 @@ function SplitBill() {
       });
     });
 
-    // Calculate Pajak as a percentage of the total price
     const pajak = (pajakPercentage / 100) * totalAll;
-    // Calculate additional costs (except for Pajak)
     const additionalTotal = Object.values(additionalCosts).reduce(
       (acc, cost) => acc + cost,
       0
@@ -130,7 +122,7 @@ function SplitBill() {
       totalPerPerson,
       pajak,
       additionalTotal,
-    }; // Include Pajak in total
+    };
   };
 
   const { totalAll, totalPerPerson, pajak, additionalTotal } = calculateTotal();
@@ -186,7 +178,6 @@ function SplitBill() {
           <button type="submit">Tambah Orang</button>
         </form>
 
-        {/* Form for Additional Costs placed after the other forms */}
         <form className="additional-costs-form">
           <h3>Biaya Tambahan</h3>
           <div>
@@ -242,9 +233,6 @@ function SplitBill() {
                 />
               </th>
             ))}
-            {/* {people.map((person, index) => (
-              <th key={index}>{person}</th>
-            ))} */}
           </tr>
         </thead>
         <tbody>

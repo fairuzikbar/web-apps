@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -39,7 +38,7 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "#f4f4f9",
     padding: "20px",
   },
   header: {
