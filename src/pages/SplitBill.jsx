@@ -137,6 +137,29 @@ function SplitBill() {
   return (
     <div className="App">
       <h1>Split Bill</h1>
+      <div className="donate-me">
+        <div className="donate-me-isi">
+          <a
+            href="https://saweria.co/fairuzikbar"
+            rel="nofollow noopener"
+            target="_blank"
+            title="via Saweria"
+          >
+            <img
+              alt="Saweria"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwmwjOYbtIh-peG5_26BFtFgRCBDPsoahSni6qPXWG43SRR04BBCMerSyUX8FCQp1upj4RuziDAwy19L_toRpnQaI61tzPKokNB8ixuyb06Ron2eK6qUXzwbmYQs4UcmYNp311k2-hkxO4lBZB6jBsyzno3xqQK5lxWF1itFn9oSgvsKPpWMdLVKgLhg/s0/saweria-igniel.png"
+              title="Saweria"
+            />
+            <span>Support Me</span>
+            <svg viewBox="0 0 24 24">
+              <path d="M13 11L21.2 2.80005" />
+              <path d="M22 6.8V2H17.2" />
+              <path d="M11 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15V13" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
       <div className="form-container">
         <form onSubmit={addRow} className="add-row-form">
           <h3>Tambah Pesanan</h3>

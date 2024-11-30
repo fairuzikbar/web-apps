@@ -9,16 +9,16 @@ body {
     flex-direction: column;
     align-items: center;
     max-width: 960px;
-  }
-  
-  h1 {
+}
+
+h1 {
     text-align: center;
     margin-top: 20px;
     color: #444;
-  }
-  
-  /* Form Container */
-  .form-container {
+}
+
+/* Form Container */
+.form-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -26,9 +26,9 @@ body {
     /* margin: 20px; */
     width: 100%;
     max-width: 960px;
-  }
-  
-  form {
+}
+
+form {
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
@@ -36,25 +36,25 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 270px;
     text-align: center;
-  }
-  
-  form h3 {
+}
+
+form h3 {
     margin-top: 0;
     margin-bottom: 15px;
     color: #555;
-  }
-  
-  form input[type='text'],
-  form input[type='number'] {
+}
+
+form input[type='text'],
+form input[type='number'] {
     width: 100%;
     padding: 8px;
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  form button {
+}
+
+form button {
     width: 100%;
     padding: 10px;
     border: none;
@@ -64,15 +64,15 @@ body {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  form button:hover {
+}
+
+form button:hover {
     background-color: #0056b3;
-  }
-  
-  /* Table Styles */
-  table,
-  .additional-costs-table {
+}
+
+/* Table Styles */
+table,
+.additional-costs-table {
     width: 100%;
     table-layout: fixed;
     margin: 20px auto;
@@ -80,30 +80,30 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  thead {
+}
+
+thead {
     background-color: #f8f9fa;
-  }
-  
-  thead th {
+}
+
+thead th {
     padding: 10px;
     text-align: left;
     border-bottom: 2px solid #ddd;
     position: sticky;
-  }
-  
-  tbody td {
+}
+
+tbody td {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
-  }
-  
-  tbody tr:last-child td {
+}
+
+tbody tr:last-child td {
     border-bottom: none;
-  }
-  
-  td button {
+}
+
+td button {
     background-color: #dc3545;
     color: #fff;
     padding: 5px 10px;
@@ -112,258 +112,345 @@ body {
     font-size: 14px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  td button:hover {
+}
+
+td button:hover {
     background-color: #c82333;
-  }
-  
-  /* Adjust the width of the columns in both tables */
-  table th:nth-child(1),
-  table th:nth-child(2),
-  .additional-costs-table th:nth-child(1) {
+}
+
+/* Adjust the width of the columns in both tables */
+table th:nth-child(1),
+table th:nth-child(2),
+.additional-costs-table th:nth-child(1) {
     width: calc(50% + 30px);
-  }
-  
-  table th:nth-child(3),
-  /* Harga */
-  .additional-costs-table th:nth-child(2) {
+}
+
+table th:nth-child(3),
+/* Harga */
+.additional-costs-table th:nth-child(2) {
     /* Biaya */
     width: 30%;
-  }
-  
-  .additional-costs-table th:nth-child(3) {
+}
+
+.additional-costs-table th:nth-child(3) {
     width: 20%;
     /* Adjust the 3rd column of the additional costs table if needed */
-  }
-  
-  tbody td:nth-child(1),
-  /* No */
-  tbody td:nth-child(2),
-  /* Detail Pengeluaran */
-  .additional-costs-table td:nth-child(1) {
+}
+
+tbody td:nth-child(1),
+/* No */
+tbody td:nth-child(2),
+/* Detail Pengeluaran */
+.additional-costs-table td:nth-child(1) {
     /* Jenis Biaya */
     width: calc(50% + 30px);
     /* Same width as header */
-  }
-  
-  tbody td:nth-child(3),
-  /* Harga */
-  .additional-costs-table td:nth-child(2) {
+}
+
+tbody td:nth-child(3),
+/* Harga */
+.additional-costs-table td:nth-child(2) {
     /* Biaya */
     width: 30%;
-  }
-  
-  .additional-costs-table td:nth-child(3) {
+}
+
+.additional-costs-table td:nth-child(3) {
     width: 20%;
     /* Adjust the 3rd column of the additional costs table */
-  }
-  
-  tbody tr:hover {
+}
+
+tbody tr:hover {
     background-color: #f1f1f1;
     transition: background-color 0.3s ease;
-  }
-  
-  th {
+}
+
+th {
     position: relative;
-  }
-  
-  th button {
+}
+
+th button {
     font-size: 12px;
     line-height: 12px;
     padding: 0;
     display: inline-block;
     text-align: center;
-  }
-  
-  /* Center the table */
-  table {
+}
+
+/* Center the table */
+table {
     margin-left: auto;
     margin-right: auto;
     /* overflow-x: auto; */
     white-space: nowrap;
     overflow: scroll;
     max-width: 960px;
-  }
-  
-  .additional-costs-table {
+}
+
+.additional-costs-table {
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  
-  table,
-  .additional-costs-table {
+}
+
+table,
+.additional-costs-table {
     overflow-x: auto;
     display: block;
-  }
-  
-  body,
-  h1,
-  form,
-  table,
-  td,
-  th {
+}
+
+body,
+h1,
+form,
+table,
+td,
+th {
     color: #333;
     /* Pastikan kontras yang baik */
-  }
-  
-  form input[type='text']:focus,
-  form input[type='number']:focus,
-  form button:focus,
-  td button:focus {
+}
+
+form input[type='text']:focus,
+form input[type='number']:focus,
+form button:focus,
+td button:focus {
     outline: 2px solid #0056b3;
-  }
-  
-  .capitalize {
+}
+
+.capitalize {
     text-transform: capitalize;
-  }
-  
-  .delete-icon {
+}
+
+.delete-icon {
     cursor: pointer;
     color: #e74c3c;
     font-size: 16px;
-  }
-  
-  .delete-icon:hover {
+}
+
+.delete-icon:hover {
     color: #c0392b;
     transform: scale(1.2);
     transition: transform 0.2s ease, color 0.2s ease;
-  }
-  
-  /* Responsive Design */
-  /* Responsive Design untuk layar kecil */
-  @media screen and (max-width: 768px) {
+}
+
+.donate-me {
+    --background: #f9f9f9;
+    --backgroundHover: #d8b4fe;
+    --color: #2f2f2f;
+    --colorHover: #2f2f2f;
+    --icon: #5c5c5c;
+    --col: 1;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.donate-me path {
+    fill: none;
+    stroke: var(--icon);
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.donate-me svg:first-child {
+    height: 2rem;
+    width: 35px;
+}
+
+.donate-me svg:last-child {
+    height: 1rem;
+    width: 1rem;
+}
+
+.donate-me-judul {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.donate-me img {
+    width: 35px;
+}
+
+.donate-me-ikon {
+    margin-right: 1rem;
+}
+
+.donate-me-isi {
+    /* display: grid; */
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* gap: 1rem; */
+    /* margin: 0 auto; */
+    /* grid-template-columns: repeat(var(--col), 1fr); */
+}
+
+.donate-me-isi a {
+    align-items: center;
+    background-color: var(--background);
+    border-radius: 7px;
+    color: var(--color);
+    display: flex;
+    gap: 1rem;
+    padding: .75rem 1.25rem;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.donate-me-isi a:hover {
+    background-color: var(--backgroundHover);
+    color: var(--colorHover);
+    text-decoration: none;
+}
+
+.donate-me-isi .wallet {
+    flex-direction: column;
+}
+
+.donate-me-isi .wallet i {
+    display: block;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 13px;
+}
+
+.donate-me-isi a,
+.donate-me-isi a span {
+    flex-grow: 1;
+}
+
+/* Responsive Design */
+/* Responsive Design untuk layar kecil */
+@media screen and (max-width: 768px) {
     table {
-      font-size: 14px;
-      display: block;
-      overflow-x: scroll;
-      width: 90%;
-      /* Tambahkan scroll horizontal jika tabel terlalu lebar */
-      white-space: nowrap;
-      /* Hindari teks terpotong */
+        font-size: 14px;
+        display: block;
+        overflow-x: scroll;
+        width: 90%;
+        /* Tambahkan scroll horizontal jika tabel terlalu lebar */
+        white-space: nowrap;
+        /* Hindari teks terpotong */
     }
-  
+
     thead th,
     tbody td {
-      padding: 8px;
+        padding: 8px;
     }
-  
+
     form {
-      width: 50%;
-      /* Form lebih fleksibel di layar kecil */
+        width: 50%;
+        /* Form lebih fleksibel di layar kecil */
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
     h1 {
-      font-size: 20px;
-      /* Ukuran teks lebih kecil */
+        font-size: 20px;
+        /* Ukuran teks lebih kecil */
     }
-  
+
     form {
-      width: 90%;
-      /* Form lebih fleksibel di layar kecil */
+        width: 90%;
+        /* Form lebih fleksibel di layar kecil */
     }
-  
+
     form input[type='text'],
     form input[type='number'] {
-      font-size: 14px;
-      /* Ukuran input lebih kecil */
+        font-size: 14px;
+        /* Ukuran input lebih kecil */
     }
-  
+
     form button {
-      font-size: 14px;
-      padding: 8px;
-      /* Tombol lebih kecil */
+        font-size: 14px;
+        padding: 8px;
+        /* Tombol lebih kecil */
     }
-  
+
     .form-container {
-      margin: auto 10px;
-      width: inherit;
+        margin: auto 10px;
+        width: inherit;
     }
-  
+
     table {
-      font-size: 12px;
-      border: none;
-      background-color: inherit;
-      /* Hilangkan border utama */
+        font-size: 12px;
+        border: none;
+        background-color: inherit;
+        /* Hilangkan border utama */
     }
-  
+
     /* Hilangkan header tabel untuk tampilan kartu */
     thead {
-      display: none;
+        display: none;
     }
-  
+
     /* Buat tabel menjadi kartu-kartu kecil */
     tbody {
-      display: flex;
-      flex-direction: column;
-      margin: auto 10px;
+        display: flex;
+        flex-direction: column;
+        margin: auto 10px;
     }
-  
+
     tbody tr {
-      display: block;
-      margin-bottom: 10px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      padding: 10px;
-      background-color: #fff;
+        display: block;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        background-color: #fff;
     }
-  
+
     tbody td {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border: none;
     }
-  
+
     tbody td:before {
-      content: attr(data-label);
-      /* Gunakan atribut data-label untuk membuat header semu */
-      font-weight: bold;
-      text-transform: capitalize;
-      flex: 1;
-      text-align: left;
-      color: #555;
+        content: attr(data-label);
+        /* Gunakan atribut data-label untuk membuat header semu */
+        font-weight: bold;
+        text-transform: capitalize;
+        flex: 1;
+        text-align: left;
+        color: #555;
     }
-  
+
     tbody td:last-child {
-      text-align: right;
-      /* Rata kanan untuk tombol atau angka */
+        text-align: right;
+        /* Rata kanan untuk tombol atau angka */
     }
-  
+
     /* Sesuaikan tampilan tombol di dalam kartu */
     td button {
-      width: auto;
-      font-size: 12px;
-      padding: 5px 10px;
+        width: auto;
+        font-size: 12px;
+        padding: 5px 10px;
     }
-  
+
     /* Hapus lebar tetap dan sesuaikan tabel untuk layar kecil */
     @media screen and (max-width: 480px) {
-  
-      table,
-      .additional-costs-table {
-        width: auto;
-        /* Hapus lebar tetap */
-        table-layout: auto;
-        /* Biarkan kolom menyesuaikan konten */
-      }
-  
-      /* Kolom-kolom akan disesuaikan dengan lebar konten */
-      th,
-      td {
-        width: auto !important;
-        /* Menghilangkan lebar tetap pada header dan kolom */
-      }
-  
-      /* Mengatur padding dan text-align */
-      thead th,
-      tbody td {
-        padding: 8px;
-        text-align: left;
-      }
+
+        table,
+        .additional-costs-table {
+            width: auto;
+            /* Hapus lebar tetap */
+            table-layout: auto;
+            /* Biarkan kolom menyesuaikan konten */
+        }
+
+        /* Kolom-kolom akan disesuaikan dengan lebar konten */
+        th,
+        td {
+            width: auto !important;
+            /* Menghilangkan lebar tetap pada header dan kolom */
+        }
+
+        /* Mengatur padding dan text-align */
+        thead th,
+        tbody td {
+            padding: 8px;
+            text-align: left;
+        }
     }
-  
-  }
+
+}
